@@ -16,6 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
+      <head>
+        <meta property="og:image" content="/og-image.png" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
