@@ -22,7 +22,8 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <h1 className={styles.h1}>朝ごはん一覧</h1>
+      <h1 className={styles.h1}>起きろ!朝ごはんReal</h1>
+      今日の朝ごはんはパンです
     </main>
   );
 }
