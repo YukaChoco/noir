@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "起きろ！朝ごはんREAL.",
+  title: "起きろ！朝ごはんReal.",
   description: "毎朝朝ごはんの写真を共有することで、互いに健康的な毎日をスタートすることができる新感覚SNSです。",
 };
 
