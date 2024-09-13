@@ -16,9 +16,9 @@ export default function Home() {
     }
   }, [router]);
 
-  if (showSplash) {
-    return <SplashPage />;
-  }
+  // if (showSplash) {
+  //   return <SplashPage />;
+  // }
 
   return (
     <main className={styles.main}>
