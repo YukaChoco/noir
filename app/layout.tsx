@@ -1,12 +1,19 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import { Yusei_Magic } from "next/font/google";
+import { ThemeProvider } from "@mui/material/styles";
+import { theme } from "./theme";
 
-const inter = Inter({ subsets: ["latin"] });
+export const yuseiMagic = Yusei_Magic({
+  weight: "400",
+  style: "normal",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "起きろ！朝ごはんReal.",
-  description: "毎朝朝ごはんの写真を共有することで、互いに健康的な毎日をスタートすることができる新感覚SNSです。",
+  description:
+    "毎朝朝ごはんの写真を共有することで、互いに健康的な毎日をスタートすることができる新感覚SNSです。",
 };
 
 export default function RootLayout({
@@ -19,7 +26,9 @@ export default function RootLayout({
       <head>
         <meta property="og:image" content="/og-image.png" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <ThemeProvider theme={theme}>
+        <body className={yuseiMagic.className}>{children}</body>
+      </ThemeProvider>
     </html>
   );
 }
