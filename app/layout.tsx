@@ -4,7 +4,7 @@ import { Yusei_Magic } from "next/font/google";
 import { ThemeProvider } from "@mui/material/styles";
 import { theme } from "./theme";
 
-export const yuseiMagic = Yusei_Magic({
+const yuseiMagic = Yusei_Magic({
   weight: "400",
   style: "normal",
   subsets: ["latin"],
