@@ -26,9 +26,9 @@ export default function RootLayout({
       <head>
         <meta property="og:image" content="/og-image.png" />
       </head>
-      <ThemeProvider theme={theme}>
-        <body className={yuseiMagic.className}>{children}</body>
-      </ThemeProvider>
+      <body className={yuseiMagic.className}>
+        <ThemeProvider theme={theme}>{children}</ThemeProvider>
+      </body>
     </html>
   );
 }
