@@ -19,11 +19,11 @@ export default function Home() {
   // if (showSplash) {
   //   return <SplashPage />;
   // }
-
   return (
     <main className={styles.main}>
-      <h1 className={styles.h1}>起きろ!朝ごはんReal</h1>
-      今日のタイトル！
+      <h1 className={styles.h1}></h1>
+      <img src="アイコン.svg" alt="アイコンのロゴ写真"></img>
+      起きろ!朝ごはんReal
     </main>
   );
 }
